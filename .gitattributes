@@ -1,0 +1,4 @@
+*.fig binary filter=lfs diff=lfs merge=lfs
+*.pdf binary filter=lfs diff=lfs merge=lfs
+*.png binary filter=lfs diff=lfs merge=lfs
+*.jpg binary filter=lfs diff=lfs merge=lfs

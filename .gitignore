@@ -1,0 +1,35 @@
+# Latex files
+*.ptc
+*.upb
+*.upa
+*.log
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.out
+*.run.xml
+*.toc
+*.nav
+*.snm
+*.synctex*
+*.idx
+*.ilg
+*.ind
+*.maf
+*.mtc*
+*.tdo
+*.vrb
+*.mtc*
+
+# PDF files outside of figures directory
+*.pdf
+!**/figures/**/*.pdf
+!**/Literature/**/*.pdf
+
+# OS files
+*.DS_Store
+
+# Python cache
+**/__pycache__/*

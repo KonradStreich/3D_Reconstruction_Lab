@@ -1,0 +1,19 @@
+default:
+  tags:
+    - texlive
+
+stages:
+  - deploy
+
+BuildPDF:
+  stage: deploy
+  script:
+    - pdflatex A5-ZMP_Poster.tex
+    - biber A5-ZMP_Poster
+    - pdflatex A5-ZMP_Poster.tex
+    - pdflatex A5-ZMP_Poster.tex
+  artifacts:
+    name: "A5-ZMP_Poster"
+    paths:
+    - A5-ZMP_Poster.pdf
+    expire_in: '42'
