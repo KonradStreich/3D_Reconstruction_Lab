@@ -1,7 +1,9 @@
 close all
-sig = 10;
+sig = 5;
 num_2D = 47;
 
+noise_plot_3D = figure;
+% nexttile
 %% No noise
 [p3D] = reconstruct_spine(Calib_Beads3D,...
     Beads2D_LAT, Beads2D_PA0,...
@@ -9,9 +11,13 @@ num_2D = 47;
     47);
 
 for p=1:17
-    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'filled','d','g')
+    no_noise=scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),...
+        'MarkerEdgeColor','#002699',...
+        'MarkerFaceColor','#002699');
     hold on
-    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'filled','d','g')
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),...
+        'MarkerEdgeColor','#002699',...
+        'MarkerFaceColor','#002699')
 end
 
 %% Noise on 3D
@@ -22,12 +28,70 @@ Calib_Beads3D_noise = make_3D_noisy(Calib_Beads3D,sig);
     47);
 
 for p=1:17
-    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'filled','d','r')
+    noise3D=scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'d',...
+        'MarkerEdgeColor','#ff0000','LineWidth',1.5);
     hold on
-    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'filled','d','r')
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'d',...
+        'MarkerEdgeColor','#ff0000','LineWidth',1.5)
 end
 
 %% Noise on 2D
+[Beads2D_LAT_noise, Beads2D_PA0_noise] = make_2D_noisy(Beads2D_LAT, Beads2D_PA0,sig);
+[p3D] = reconstruct_spine(Calib_Beads3D,...
+    Beads2D_LAT_noise, Beads2D_PA0_noise,...
+    Vertebrae_LAT, Vertebrae_PA0,...
+    47); 
+
+for p=1:17
+    noise2D=scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'d',...
+        'MarkerEdgeColor','#00cc00','LineWidth',1.5);
+    hold on
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'d',...
+        'MarkerEdgeColor','#00cc00','LineWidth',1.5)
+end
+
+set(gcf,'units','centimeters','position',[2,4,8,18])
+
+xlabel('x')
+ylabel('y')
+zlabel('z')
+axis equal
+view(3)
+title('a) 3D view')
+
+
+%% nexttile
+noise_plot_2D = figure;
+% nexttile
+
+[p3D] = reconstruct_spine(Calib_Beads3D,...
+    Beads2D_LAT, Beads2D_PA0,...
+    Vertebrae_LAT, Vertebrae_PA0,...
+    47);
+
+for p=1:17
+    no_noise=scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),...
+        'MarkerEdgeColor','#002699',...
+        'MarkerFaceColor','#002699');
+    hold on
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),...
+        'MarkerEdgeColor','#002699',...
+        'MarkerFaceColor','#002699')
+end
+
+Calib_Beads3D_noise = make_3D_noisy(Calib_Beads3D,sig);
+[p3D] = reconstruct_spine(Calib_Beads3D_noise,...
+    Beads2D_LAT, Beads2D_PA0,...
+    Vertebrae_LAT, Vertebrae_PA0,...
+    47);
+
+for p=1:17
+    noise3D=scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'d',...
+        'MarkerEdgeColor','#ff0000','LineWidth',1.5);
+    hold on
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'d',...
+        'MarkerEdgeColor','#ff0000','LineWidth',1.5)
+end
 
 [Beads2D_LAT_noise, Beads2D_PA0_noise] = make_2D_noisy(Beads2D_LAT, Beads2D_PA0,sig);
 [p3D] = reconstruct_spine(Calib_Beads3D,...
@@ -36,11 +100,24 @@ end
     47); 
 
 for p=1:17
-    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'filled','d','b')
+    noise2D=scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'d',...
+        'MarkerEdgeColor','#00cc00','LineWidth',1.5);
     hold on
-    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'filled','d','b')
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'d',...
+        'MarkerEdgeColor','#00cc00','LineWidth',1.5)
 end
 
+% legend([no_noise,noise3D,noise2D],'Ideal reconstruction',...
+%     'Reconstruction with noise on 3D beads',...
+%     'Reconstruction with noise on 2D projection',...
+%     'Location','northwestoutside')
+
+set(gcf,'units','centimeters','position',[12,4,8,18])
+
+xlabel('x')
+ylabel('y')
+zlabel('z')
 
 axis equal
-view(3)
+view([-1 0 0])
+title('b) view in x-direction')

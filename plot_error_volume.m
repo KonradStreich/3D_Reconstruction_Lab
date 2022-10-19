@@ -2,6 +2,7 @@ close all
 max_sizes = 4;
 RMSEx = zeros(max_sizes,1);
 RMSEy = zeros(max_sizes,1);
+
 RMSEz = zeros(max_sizes,1);
 sum = zeros(max_sizes,1);
 RMSE = zeros(max_sizes,1);
@@ -20,5 +21,8 @@ for j = 1:3
 end
 
 figure
+errors(4,:)=[];
 bar(errors)
-legend('RMSE in x direction','RMSE in y direction','RMSE in z direction','RMSE-3D')
+legend('RMSE in x direction','RMSE in y direction',...
+    'RMSE in z direction','RMSE-3D',...
+    'Location','northwest')
