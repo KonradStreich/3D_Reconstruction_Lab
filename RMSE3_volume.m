@@ -1,4 +1,4 @@
-function [error] = RMSE3(num)
+function [error] = RMSE3_volume(volume_size)
 
 % load in Point Sets
 load("Calib_Beads2D.mat")
@@ -13,10 +13,10 @@ load("Vertebrae2D.mat")
     47); % take all calibration beads
 
 %% Get simplieied 3D reconstruction of spine using only some calibration beads
-[p3D] = reconstruct_spine(Calib_Beads3D,...
+[p3D] = reconstruct_spine_volume(Calib_Beads3D,...
     Beads2D_LAT, Beads2D_PA0,...
     Vertebrae_LAT, Vertebrae_PA0,...
-    num); % tae only a few selected calibration beads
+    volume_size); % tae only a few selected calibration beads
 
 %% Put 3D Points all in [3x(6*N_vertebrae)] matrix (intead of [3x6xN_vertebrae])
 num_vertebrae = size(p3D_ideal,3);

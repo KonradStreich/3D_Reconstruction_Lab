@@ -11,6 +11,18 @@ fprintf("Hello World")
 % number of 2D points and takes the matching 3D points accordingly
 CalibrationBeads = Calib_Beads3D;% ([1 25 6 30     31 51 35 55     56 80 61 85    86 106 90 110]);
 
+%% Retrieve 2D coords of a bead available in both views
+
+Beads2D_LAT_selection = Beads2D_LAT([1 6 24 43 47 28]);
+Beads2D_PAO_selection = Beads2D_PA0([1 5 25 45 29 49]);
+
+name = 'A_1_1';
+for viewpt = PA0:PA20,
+    obj = GetObject(Beads2D{viewpt},name);
+    bead_2D(viewpt,:) = obj.coord;
+end
+clear obj
+
 Beads_LAT = Beads2D_LAT([1 6 24 43 47 28]);
 
 Beads_PA0 = Beads2D_PA0([1 5 25 45 29 49]);
