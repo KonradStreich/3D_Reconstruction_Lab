@@ -2,8 +2,17 @@ close all
 sig = 10;
 num_2D = 47;
 
-figure
-hold on
+%% No noise
+[p3D] = reconstruct_spine(Calib_Beads3D,...
+    Beads2D_LAT, Beads2D_PA0,...
+    Vertebrae_LAT, Vertebrae_PA0,...
+    47);
+
+for p=1:17
+    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'filled','d','g')
+    hold on
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'filled','d','g')
+end
 
 %% Noise on 3D
 Calib_Beads3D_noise = make_3D_noisy(Calib_Beads3D,sig);
@@ -12,9 +21,10 @@ Calib_Beads3D_noise = make_3D_noisy(Calib_Beads3D,sig);
     Vertebrae_LAT, Vertebrae_PA0,...
     47);
 
-for p=1:size(17,1)
-    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'or')
-    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'or')
+for p=1:17
+    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'filled','d','r')
+    hold on
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'filled','d','r')
 end
 
 %% Noise on 2D
@@ -25,9 +35,10 @@ end
     Vertebrae_LAT, Vertebrae_PA0,...
     47); 
 
-for p=1:size(17,1)
-    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'ob')
-    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'ob')
+for p=1:17
+    scatter3(p3D(1,1:3,p),p3D(2,1:3,p),p3D(3,1:3,p),'filled','d','b')
+    hold on
+    scatter3(p3D(1,4:6,p),p3D(2,4:6,p),p3D(3,4:6,p),'filled','d','b')
 end
 
 
