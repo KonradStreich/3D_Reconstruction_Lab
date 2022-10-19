@@ -1,14 +1,14 @@
-function [p3D] = reconstruct_spine(Calibration_Beads_3D,...
+function [p3D] = reconstruct_spine_volume(Calibration_Beads_3D,...
     Calibration_Beads_2D_LAT, Calibration_Beads_2D_PA0,...
     Vertebrae_LAT_scan_2D, Vertebrae_PA0_scan_2D,...
-    num)
+    volume_size)
 
-%load("Calib_Beads2D.mat")
-%load("Calib_Beads3D.mat")
+load("Calib_Beads2D.mat")
+load("Calib_Beads3D.mat")
 load("Vertebrae2D.mat")
 CalibrationBeads = Calibration_Beads_3D;
 
-[Beads_LAT, Beads_PA0] = choose_2Dpoints(num, Calibration_Beads_2D_LAT, Calibration_Beads_2D_PA0);
+[Beads_LAT, Beads_PA0] = choose_2Dpoints_volume(volume_size);
 
 M_LAT = DLT(Beads_LAT, CalibrationBeads);
 M_PA0 = DLT(Beads_PA0, CalibrationBeads);

@@ -1,4 +1,4 @@
-function [error] = RMSE3(num)
+function [error] = RMSE3_noise_worstcase(num,sigma)
 
 % load in Point Sets
 load("Calib_Beads2D.mat")
@@ -13,8 +13,10 @@ load("Vertebrae2D.mat")
     47); % take all calibration beads
 
 %% Get simplieied 3D reconstruction of spine using only some calibration beads
-[p3D] = reconstruct_spine(Calib_Beads3D,...
-    Beads2D_LAT, Beads2D_PA0,...
+[Beads2D_LAT_noise, Beads2D_PA0_noise] = make_2D_noisy(Beads2D_LAT, Beads2D_PA0,sigma);
+Calib_Beads3D_noise = make_3D_noisy(Calib_Beads3D,sigma);
+[p3D] = reconstruct_spine(Calib_Beads3D_noise,...
+    Beads2D_LAT_noise, Beads2D_PA0_noise,...
     Vertebrae_LAT, Vertebrae_PA0,...
     num); % tae only a few selected calibration beads
 
