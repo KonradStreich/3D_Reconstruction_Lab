@@ -22,9 +22,9 @@
      showgrid="false"
      inkscape:zoom="0.3702381"
      inkscape:cx="492.92604"
-     inkscape:cy="596.91318"
+     inkscape:cy="598.26366"
      inkscape:window-width="1368"
-     inkscape:window-height="850"
+     inkscape:window-height="809"
      inkscape:window-x="-6"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
@@ -569,16 +569,17 @@
          id="path194" />
     </g>
     <g
-       style="fill:white; text-rendering:optimizeSpeed; color-rendering:optimizeSpeed; image-rendering:optimizeSpeed; shape-rendering:crispEdges; stroke:white; color-interpolation:sRGB;"
-       id="g200">
+       style="color-interpolation:sRGB;fill:#ffffff;stroke:#ffffff;color-rendering:optimizeSpeed;image-rendering:optimizeSpeed;shape-rendering:crispEdges;text-rendering:optimizeSpeed"
+       id="g200"
+       transform="translate(-24)">
       <path
-         style="stroke:none;"
-         d="M993 187 L993 84 L290 84 L290 187 Z"
+         style="stroke:none"
+         d="M 993,187 V 84 H 290 v 103 z"
          id="path198" />
     </g>
     <g
-       transform="translate(384,103.5)"
-       style="font-size:24px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'SansSerif'; color-interpolation:linearRGB;"
+       transform="translate(360,103.5)"
+       style="font-size:24px;font-family:SansSerif;color-interpolation:linearRGB;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g204">
       <text
          x="0"
@@ -590,19 +591,20 @@
            id="tspan5059">Mean resulting 3D RMSE for 2D errors</tspan></text>
     </g>
     <g
-       style="stroke-linecap:butt; fill:rgb(0,0,230); text-rendering:geometricPrecision; image-rendering:optimizeQuality; color-rendering:optimizeQuality; stroke-linejoin:round; stroke:rgb(0,0,230); color-interpolation:linearRGB; stroke-width:4;"
-       id="g208">
+       style="color-interpolation:linearRGB;fill:#0000e6;stroke:#0000e6;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
+       id="g208"
+       transform="translate(-24)">
       <line
          y2="103.5"
-         style="fill:none;"
+         style="fill:none"
          x1="298"
          x2="378"
          y1="103.5"
          id="line206" />
     </g>
     <g
-       transform="translate(384,135.5)"
-       style="font-size:24px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'SansSerif'; color-interpolation:linearRGB;"
+       transform="translate(360,135.5)"
+       style="font-size:24px;font-family:SansSerif;color-interpolation:linearRGB;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g212">
       <text
          x="0"
@@ -614,19 +616,20 @@
            id="tspan6417">Mean resulting 3D RMSE for 3D errors</tspan></text>
     </g>
     <g
-       style="stroke-linecap:butt; fill:rgb(0,153,51); text-rendering:geometricPrecision; image-rendering:optimizeQuality; color-rendering:optimizeQuality; stroke-linejoin:round; stroke:rgb(0,153,51); color-interpolation:linearRGB; stroke-width:4;"
-       id="g216">
+       style="color-interpolation:linearRGB;fill:#009933;stroke:#009933;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
+       id="g216"
+       transform="translate(-24)">
       <line
          y2="135.5"
-         style="fill:none;"
+         style="fill:none"
          x1="298"
          x2="378"
          y1="135.5"
          id="line214" />
     </g>
     <g
-       transform="translate(384,167.5)"
-       style="font-size:24px; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'SansSerif'; color-interpolation:linearRGB;"
+       transform="translate(360,167.5)"
+       style="font-size:24px;font-family:SansSerif;color-interpolation:linearRGB;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g220">
       <text
          x="0"
@@ -635,25 +638,27 @@
          style="stroke:none"
          id="text218"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '"
-           id="tspan11909">Mean resulting 3D RMSE for 2D and 3D errorscombined</tspan></text>
+           id="tspan11909">Mean resulting 3D RMSE for both 2D and 3D  error</tspan></text>
     </g>
     <g
-       style="stroke-linecap:butt; fill:rgb(204,0,0); text-rendering:geometricPrecision; image-rendering:optimizeQuality; color-rendering:optimizeQuality; stroke-linejoin:round; stroke:rgb(204,0,0); color-interpolation:linearRGB; stroke-width:4;"
-       id="g224">
+       style="color-interpolation:linearRGB;fill:#cc0000;stroke:#cc0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
+       id="g224"
+       transform="translate(-24)">
       <line
          y2="167.5"
-         style="fill:none;"
+         style="fill:none"
          x1="298"
          x2="378"
          y1="167.5"
          id="line222" />
     </g>
     <g
-       style="stroke-linecap:butt; fill:rgb(38,38,38); text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; stroke:rgb(38,38,38); color-interpolation:linearRGB; stroke-width:1.3333;"
-       id="g228">
+       style="color-interpolation:linearRGB;fill:#262626;stroke:#262626;stroke-width:1.3333;stroke-linecap:butt;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
+       id="g228"
+       transform="matrix(1.0767701,0,0,0.99951556,-46.238386,0.06564169)">
       <path
-         d="M290 187 L290 84 L993 84 L993 187 Z"
-         style="fill:none; fill-rule:evenodd;"
+         d="M 290,187 V 84 h 703 v 103 z"
+         style="fill:none;fill-rule:evenodd"
          id="path226" />
     </g>
   </g>

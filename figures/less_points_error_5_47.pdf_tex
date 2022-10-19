@@ -1,0 +1,89 @@
+%% Creator: Inkscape 1.1 (c68e22c387, 2021-05-23), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'less_points_error_5_47.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{840bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.75)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{less_points_error_5_47.pdf}}%
+    \put(0.12366071,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.20922616,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.30148812,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
+    \put(0.39375,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20\end{tabular}}}}%
+    \put(0.48601187,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}25\end{tabular}}}}%
+    \put(0.57827384,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30\end{tabular}}}}%
+    \put(0.67053571,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}35\end{tabular}}}}%
+    \put(0.76279759,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}40\end{tabular}}}}%
+    \put(0.85505955,0.04851188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}45\end{tabular}}}}%
+    \put(0.35758964,0.01398813){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}# points used for calibration\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{less_points_error_5_47.pdf}}%
+    \put(0.10744045,0.07276786){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.07440473,0.1407242){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.05\end{tabular}}}}%
+    \put(0.08690473,0.20868054){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0.07440473,0.27663688){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.15\end{tabular}}}}%
+    \put(0.08690473,0.3445933){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0.07440473,0.41254955){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.25\end{tabular}}}}%
+    \put(0.08690473,0.48050598){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0.07440473,0.54846232){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.35\end{tabular}}}}%
+    \put(0.08690473,0.61641866){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0.07440473,0.684375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.45\end{tabular}}}}%
+    \put(0.06101188,0.35000027){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}RMSE\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{less_points_error_5_47.pdf}}%
+    \put(0.62142857,0.64910714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}RMSE in x direction\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{less_points_error_5_47.pdf}}%
+    \put(0.62142857,0.62053571){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}RMSE in y direction\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{less_points_error_5_47.pdf}}%
+    \put(0.62142857,0.59196429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}RMSE in z direction\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{less_points_error_5_47.pdf}}%
+    \put(0.62142857,0.56339286){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3D RMSE\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{less_points_error_5_47.pdf}}%
+  \end{picture}%
+\endgroup%

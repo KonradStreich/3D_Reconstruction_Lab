@@ -9,7 +9,7 @@ RMSE = zeros(max_sizes,1);
 errors = zeros(max_sizes,4,1);
 
 
-for j = 1:3
+for j = 1:5
     error = RMSE3_volume(j);
     errors(j,:) = error;
     RMSEx(j) = error(1);
@@ -20,9 +20,14 @@ for j = 1:3
     sum(j) = RMSEx(j)+RMSEy(j)+RMSEz(j);
 end
 
+if j <4
+    errors(4,:)=[];
+end
+
 figure
-errors(4,:)=[];
 bar(errors)
 legend('RMSE in x direction','RMSE in y direction',...
     'RMSE in z direction','RMSE-3D',...
     'Location','northwest')
+xlabel('# of case')
+ylabel('RMSE')

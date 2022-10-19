@@ -72,11 +72,11 @@
     \put(0.09404759,0.684375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}14\end{tabular}}}}%
     \put(0.08065473,0.19642884){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}RMSE of reconstucted 3D Points\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{noise_error_comparison.pdf}}%
-    \put(0.34285714,0.64910714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean resulting 3D RMSE for 2D errors\end{tabular}}}}%
+    \put(0.32142857,0.64910714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean resulting 3D RMSE for 2D errors\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{noise_error_comparison.pdf}}%
-    \put(0.34285714,0.62053571){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean resulting 3D RMSE for 3D errors\end{tabular}}}}%
+    \put(0.32142857,0.62053571){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean resulting 3D RMSE for 3D errors\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{noise_error_comparison.pdf}}%
-    \put(0.34285714,0.59196429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean resulting 3D RMSE for 2D and 3D errorscombined\end{tabular}}}}%
+    \put(0.32142857,0.59196429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean resulting 3D RMSE for both 2D and 3D  error\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{noise_error_comparison.pdf}}%
   \end{picture}%
 \endgroup%
